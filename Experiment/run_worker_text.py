@@ -35,7 +35,7 @@ def chat_completion(messages, tools=[], model_name="claude-3-5-sonnet-20240620",
     return response_data
 
 if __name__ == "__main__":
-    with open('data_text.json', 'r') as file:
+    with open('data/data_text.json', 'r') as file:
         data = json.load(file)
 
     channel_name = data['channel_name']
@@ -73,5 +73,5 @@ if __name__ == "__main__":
     response_data = chat_completion(messages)
     print(response_data)
 
-    with open("response_data_text.txt", "w") as f:
+    with open("response/response_data_text.txt", "w") as f:
         f.write(response_data)
