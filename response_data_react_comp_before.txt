@@ -1,0 +1,114 @@
+``` for a fancy webpage component presenting a new viral video concept for MrBeast:
+
+```jsx
+import React from 'react';
+import { Container, Row, Col, Card } from 'react-bootstrap';
+import { FaGlobe, FaUsers, FaMoneyBillWave, FaHeart } from 'react-icons/fa';
+
+const ViralVideoConcept = () => {
+  const conceptStyle = {
+    backgroundColor: '#f8f9fa',
+    padding: '40px 0',
+    fontFamily: 'Arial, sans-serif'
+  };
+
+  const headerStyle = {
+    color: '#1a73e8',
+    fontWeight: 'bold',
+    marginBottom: '30px',
+    textAlign: 'center'
+  };
+
+  const cardStyle = {
+    border: 'none',
+    boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
+    height: '100%',
+    transition: 'transform 0.3s',
+    cursor: 'pointer'
+  };
+
+  const iconStyle = {
+    fontSize: '2.5rem',
+    marginBottom: '15px',
+    color: '#1a73e8'
+  };
+
+  const titleStyle = {
+    fontSize: '1.2rem',
+    fontWeight: 'bold',
+    marginBottom: '10px'
+  };
+
+  return (
+    <div style={conceptStyle}>
+      <Container>
+        <h1 style={headerStyle}>MrBeast's Next Viral Video Concept</h1>
+        <h2 style={{...headerStyle, fontSize: '2rem'}}>
+          "Global Treasure Hunt: $10 Million Hidden Worldwide"
+        </h2>
+        <Row>
+          <Col md={3} className="mb-4">
+            <Card style={cardStyle} className="text-center p-4">
+              <FaGlobe style={iconStyle} />
+              <h3 style={titleStyle}>Global Scale</h3>
+              <p>Hide $10 million in 100 locations across all 7 continents</p>
+            </Card>
+          </Col>
+          <Col md={3} className="mb-4">
+            <Card style={cardStyle} className="text-center p-4">
+              <FaUsers style={iconStyle} />
+              <h3 style={titleStyle}>Massive Participation</h3>
+              <p>Millions of viewers worldwide can join the hunt</p>
+            </Card>
+          </Col>
+          <Col md={3} className="mb-4">
+            <Card style={cardStyle} className="text-center p-4">
+              <FaMoneyBillWave style={iconStyle} />
+              <h3 style={titleStyle}>Life-Changing Prizes</h3>
+              <p>$100,000 prize in each location</p>
+            </Card>
+          </Col>
+          <Col md={3} className="mb-4">
+            <Card style={cardStyle} className="text-center p-4">
+              <FaHeart style={iconStyle} />
+              <h3 style={titleStyle}>Charitable Impact</h3>
+              <p>50% of found money goes to local charities</p>
+            </Card>
+          </Col>
+        </Row>
+        <Row className="mt-4">
+          <Col>
+            <Card style={{...cardStyle, padding: '20px'}}>
+              <h3 style={{...titleStyle, textAlign: 'center'}}>Concept Details</h3>
+              <ul>
+                <li>MrBeast and team hide $100,000 in 100 diverse locations worldwide</li>
+                <li>Clues released through a series of videos and social media posts</li>
+                <li>Local participants and online viewers can collaborate to solve clues</li>
+                <li>Each location features unique challenges reflecting local culture</li>
+                <li>Live updates and real-time tracking of found treasures</li>
+                <li>Finders share their stories in follow-up videos</li>
+                <li>Culminates in a grand finale video revealing all locations and winners</li>
+              </ul>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+    </div>
+  );
+};
+
+export default ViralVideoConcept;
+```
+
+This component creates a visually appealing webpage that presents the concept for a new viral video idea for MrBeast's channel. The concept, "Global Treasure Hunt: $10 Million Hidden Worldwide," is showcased with key features highlighted in cards and additional details provided.
+
+The design uses a clean, modern style with a light background, eye-catching icons, and a color scheme that aligns with MrBeast's brand (using blue as a primary color). The layout is responsive and will adapt to different screen sizes.
+
+This concept aligns with MrBeast's brand by incorporating:
+1. A global scale challenge
+2. Massive prizes and high stakes
+3. Opportunities for wide audience participation
+4. A charitable component
+5. Multiple video opportunities (hiding money, clue videos, winner stories, finale)
+
+The idea is designed to generate massive interest and engagement worldwide, aligning with MrBeast's goal of creating viral, attention-grabbing content. It also maintains his philanthropic approach by incorporating charitable donations into the concept.
