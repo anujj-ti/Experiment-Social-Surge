@@ -75,6 +75,25 @@ if __name__ == "__main__":
     ]
 
     response_data = chat_completion(messages, max_tokens=4096)
-    print(response_data)
+
+    image_description = None
+    chain_of_thoughts = None
+
+    try:
+        response_dict = json.loads(response_data)
+        image_description = response_dict.get("image_description", "No description found")
+        chain_of_thoughts = response_dict.get("chain_of_thoughts", "No chain of thoughts found")
+    except json.JSONDecodeError:
+        print("Failed to decode JSON")
+
+    # Now you can access the variables here
+    if image_description is not None:
+        print("Image Description:", image_description)
+
+    if chain_of_thoughts is not None:
+        print("Chain of Thoughts:", chain_of_thoughts)
+
+
+
     with open("response/response_data_image.txt", "w") as f:
         f.write(response_data)
